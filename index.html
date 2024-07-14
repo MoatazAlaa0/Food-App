@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <!-----logo-icon ----->
+    <link rel="shortcut icon" href="Image/logo.png" type="image/x-icon">
+    <!-----icons----->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-----bootstrap----->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-----css----->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--spinner-->
+    <div
+        class="d-flex align-items-center justify-content-center position-fixed z-2  top-0 start-0 end-0 bottom-0 bg-black my-spinner ">
+        <i class="fa-solid fa-spinner fa-spin fa-5x text-white "></i>
+    </div>
+    <!--spinner end-->
+    <!----header---->
+    <header>
+        <nav class="left-nav text-white p-4 flex-column d-flex align-items-start justify-content-between z-3">
+            <ul class="list-unstyled">
+                <li class="py-2">
+                    <a href="#meals" class="hidden text-decoration-none text-white vip" data-section="meals">Search</a>
+                </li>
+                <li class="py-2">
+                    <a href="#categories" class="hidden text-decoration-none text-white categories"
+                        data-section="categories">Categories</a>
+                </li>
+                <li class="py-2">
+                    <a href="#area" class="hidden text-decoration-none text-white area" data-section="area">Area</a>
+                </li>
+                <li class="py-2">
+                    <a href="#ingredients" class="hidden text-decoration-none text-white ingredients"
+                        data-section="ingredients">Ingredients</a>
+                </li>
+                <li class="py-2">
+                    <a href="#contact-us" class="hidden text-decoration-none text-white"
+                        data-section="contact-us">Contact Us</a>
+                </li>
+            </ul>
+            <div class="footer">
+                <div class="icons-footer d-flex">
+                    <i class="fa-brands fa-facebook fs-5 me-1"></i>
+                    <i class="fa-brands fa-twitter fs-5 me-1"></i>
+                    <i class="fa-solid fa-globe fs-5 me-1"></i>
+                </div>
+                <p class="fw-semibold mt-1">Copyright Â© 2019 All Rights Reserved.</p>
+            </div>
+            <div
+                class="right-nav d-flex align-items-center justify-content-between py-4 px-2 bg-white text-center text-black flex-column">
+                <img src="Image/logo.png" class="w-100" alt="logo">
+                <div class="change-icon">
+                    <i class="fa-solid open-close-icon fa-2x fa-align-justify"></i>
+                </div>
+                <div class="footer-icons">
+                    <i class="fa-solid fa-globe d-block"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- end-header -->
+     <!----search-meals---->
+    <section id="meals" class="">
+        <div class="container w-75  pt-5 my-input d-none">
+            <div class="row px-4">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <input type="email" class="form-control spf" autocomplete="off" id="SearchByName"
+                            placeholder="Search By Name">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <input type="email" class="form-control spf" autocomplete="off" maxlength="1"
+                            id="SearchByLetter" placeholder="Search By First Letter">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-5 my-row">
+            <div class="row row-food">
+                <div class="d-flex align-items-center justify-content-center my-spinner-2 mt-lg-5 pt-lg-5 d-none">
+                    <i class="fa-solid fa-spinner fa-spin fa-5x text-white"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end-search-meals -->
+    <!----meals-deatails---->
+    <section id="details" class=" position-relative d-none">
+        <div class="container text-white  py-5">
+
+            <div class="row row-details">
+                <div class="d-flex align-items-center justify-content-center my-spinner-2 mt-lg-5 pt-lg-5 d-none">
+                    <i class="fa-solid fa-spinner fa-spin fa-5x text-white"></i>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!--end-meals-deatails -->
+    <!----meals-categories---->
+    <section id="categories" class="py-5 d-none">
+        <div class="container">
+            <div class="row row-categories">
+                <div class="d-flex align-items-center justify-content-center my-spinner-2 mt-lg-5 pt-lg-5 d-none">
+                    <i class="fa-solid fa-spinner fa-spin fa-5x text-white"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="area" class=" py-5 d-none">
+        <div class="container">
+            <div class="row row-area g-3">
+                <div class="d-flex align-items-center justify-content-center my-spinner-2 mt-lg-5 pt-lg-5 d-none">
+                    <i class="fa-solid fa-spinner fa-spin fa-5x text-white"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----end-meals-categories---->
+    <!-----meals-ingredients---->
+    <section id="ingredients" class="py-5 d-none">
+        <div class="container">
+            <div class="row row-ingredients">
+                <div class="d-flex align-items-center justify-content-center my-spinner-2 mt-lg-5 pt-lg-5 d-none">
+                    <i class="fa-solid fa-spinner fa-spin fa-5x text-white"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----end-meals-ingredients---->
+    <!----contact-us-----> 
+    <section id="contact-us" class="vh-100 d-flex align-items-center justify-content-center d-none">
+        <div class="container w-75 text-center ">
+            <form action="">
+
+                <div class="row row-contact-us g-3 ">
+                    <div class="col-md-6 ">
+    
+                      
+    
+                            <input type="text"oninput="valid(this)" class="form-control"autocomplete="off"  id="userName"placeholder="Enter Your Name">
+                            <div id="nameAlert" class="alert alert-danger w-100 mt-2 d-none ">
+                                Name must be between 3 and 16 characters and contain only letters and numbers
+                            </div>
+    
+    
+                    </div>
+                    <div class="col-md-6 ">
+                       
+    
+                            <input type="email" oninput="valid(this)" class="form-control"autocomplete="off"  id="userEmail" placeholder="Enter Your Email">
+                            <div id="emailAlert" class="alert alert-danger w-100 mt-2 d-none ">
+                                Email not valid *exemple@yyy.zzz
+                            </div>
+    
+                    </div>
+                    <div class="col-md-6 ">
+                  
+    
+                            <input type="number" oninput="valid(this)" class="form-control"autocomplete="off"  id="userPhone" placeholder="Enter Your Phone">
+                            <div id="phoneAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                Enter valid Phone Number
+                            </div>
+                    </div>
+                    <div class="col-md-6 ">
+                       
+    
+                            <input type="number" oninput="valid(this)" class="form-control"autocomplete="off" id="userAge" placeholder="Enter Your Age">
+                       
+                            <div id="ageAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                Enter valid age
+                            </div>
+                    </div>
+                    <div class="col-md-6 ">
+                       
+    
+                            <input type="password"oninput="valid(this)"  class="form-control" autocomplete="off" id="userPassword"placeholder="Enter Your Password">
+                            <div id="passwordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                Enter valid password *Minimum eight characters, at least one letter and one number:*
+                            </div>
+    
+                    </div>
+                    <div class="col-md-6 ">
+                        
+    
+                            <input type="password" oninput="valid(this)" class="form-control"autocomplete="off" id="userRepassword" placeholder="Repassword">
+                            <div id="repasswordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                                Enter valid repassword 
+                            </div>
+    
+                    </div>
+                </div>
+                <button id="submitButton" disabled  class="btn btn-danger mt-3 ">Submit</button>
+            </form>
+        </div>
+    </section>
+    <!---end-contact-us--->
+
+    <script src="Js/jquery-3.7.1.min.js"></script>
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/index.js"></script>
+</body>
+
+</html>
